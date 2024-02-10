@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProfileScreen.Pages.ProfilePage"
+             Title="ProfilePage"
+             Background="Yellow">
+    <VerticalStackLayout>
+        <Label 
+            Text="PROFILE"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" Margin="0,0,0,20" 
+            />
+
+        <Image
+            Source="profile.jpg"
+            WidthRequest="200"
+            HeightRequest="200"
+            Aspect="AspectFill" HorizontalOptions="Center"
+            VerticalOptions="Center"/>
+
+        <Editor x:Name="Name"
+                Placeholder="Name"
+                Text="{Binding}"
+                HeightRequest="50"
+                Margin="60,10"
+                BackgroundColor="Black"
+                TextColor="White"
+                />
+
+        <Editor x:Name="Surname"
+                  Placeholder="Surname"
+                  Text="{Binding}"
+                  HeightRequest="50"
+                Margin="60,10"
+                BackgroundColor="Black"
+                TextColor="White"/>
+
+        <Editor x:Name="Bio"
+                 Placeholder="Bio"
+                 Text="{Binding}"
+                 HeightRequest="200" AutoSize="TextChanges"
+                Margin="60,10"
+                BackgroundColor="Black"
+                TextColor="White"/>
+
+        <Editor x:Name="Interests"
+                    Placeholder="Interests"
+                    Text="{Binding}"
+                     HeightRequest="50"
+                Margin="60,10"
+                BackgroundColor="Black"
+                TextColor="White"/>
+
+        <Button Text="EDIT"
+                Background="Black"
+                TextColor="White"
+                Margin="90,10">
+            
+        </Button>
+    </VerticalStackLayout>
+    
+</ContentPage>

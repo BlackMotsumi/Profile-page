@@ -1,0 +1,1 @@
+C:\Users\Brave Black\source\repos\ProfileScreen\ProfileScreen.csproj;x64
